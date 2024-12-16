@@ -1,0 +1,183 @@
+.chart__top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin-bottom: 24px;
+
+    .chart__top__left__content {
+        width: 100%;
+        // min-width: 308px;
+        height: 344px;
+        border-radius: 20px;
+        background-image: url("../../assets/images/image2.png");
+        background-size: cover;
+        padding: 36px 31px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .chart__top__left__content__Welcome {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            text-align: left;
+            color: #A0AEC0;
+            margin-bottom: 11px;
+        }
+
+        .chart__top__left__content__Mark {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            color: #FFFFFF;
+            margin-bottom: 18px;
+        }
+
+        .chart__top__left__content__Glad {
+            max-width: 168px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #A0AEC0;
+        }
+
+        .chart__top__left__content__btn {
+            background: none;
+            border: none;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 12px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5.5px;
+
+            .chart__top__left__content__btn__icon {
+                font-size: 15px;
+            }
+
+            &:hover {
+                color: #A0AEC0;
+            }
+        }
+    }
+
+    .chart__top__center__content {
+        max-width: 350px;
+        width: 100%;
+        height: 344px;
+        border-radius: 20px;
+        background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
+        backdrop-filter: blur(120px);
+        padding: 26px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .chart__top__center__content__group {
+            width: 100%;
+            height: auto;
+
+            .chart__top__center__content__text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25.2px;
+                text-align: left;
+                color: #FFFFFF;
+                margin-bottom: 4px;
+            }
+
+            .chart__top__center__content__texttwo {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                text-align: left;
+                color: #A0AEC0;
+            }
+        }
+
+        .chart__top__center__content__box {
+            width: 100%;
+            height: 82px;
+            border-radius: 20px;
+            background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
+            backdrop-filter: blur(120px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chart__top__center__content__box h3 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.chart__bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+
+    .chart__bottom__left {
+        width: 100%;
+        height: 445px;
+        border-radius: 20px;
+        background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 28px 21px;
+
+        .chart__bottom__left__group {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+
+            .chart__bottom__left__group__sales {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25.2px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+
+            .chart__bottom__left__group__more {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19.6px;
+                text-align: left;
+                color: #01B574;
+            }
+        }
+    }
+
+    .chart__bottom__right {
+        width: 652px;
+        height: 445px;
+        border-radius: 20px;
+        background: linear-gradient(126.97deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 28px 21px;
+    }
+}

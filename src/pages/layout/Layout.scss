@@ -1,0 +1,14 @@
+.layout__route {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 24px;
+
+    .layout__right {
+        flex: 1;
+        padding-right: 22px;
+        overflow-y: auto;
+    }
+}

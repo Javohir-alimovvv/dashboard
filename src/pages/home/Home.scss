@@ -1,0 +1,10 @@
+.home__big {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0px 0px 70px 0px;
+}
+
+.home__big::-webkit-scrollbar {
+    width: 0;
+}

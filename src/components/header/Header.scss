@@ -1,0 +1,125 @@
+.header {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .header__left__content {
+        .header__left__content__group {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 4px;
+            margin-bottom: 6px;
+
+            .header__left__content__group__seimbol {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                text-align: left;
+                color: #808080;
+            }
+
+            .header__left__content__group__bold {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 12px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+        }
+
+        .header__left__content__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.6px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+
+    .header__right__content {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        justify-content: center;
+
+        .header__right__content__form {
+            width: 249px;
+            height: 39px;
+            border-radius: 15px;
+            border: 0.5px solid #E2E8F04D;
+            background: #0F1535;
+            padding: 0px 11.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 11.5px;
+
+            .header__right__content__form__btn {
+                width: 30px;
+                height: 30px;
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: #2D3748;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+
+            .header__right__content__form__input {
+                outline: none;
+                border: none;
+                background: none;
+                width: 100%;
+                height: 100%;
+                color: #A0AEC0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+            }
+        }
+
+        .header__right__content__group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            cursor: pointer;
+
+            .header__right__content__group__icon {
+                font-size: 18px;
+                color: #718096;
+            }
+
+            .header__right__content__group__text {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: #718096;
+            }
+
+            &:hover .header__right__content__group__text{
+                color: #FFFFFF;
+            }
+            &:hover .header__right__content__group__icon{
+                color: #FFFFFF;
+            }
+        }
+        .header__right__content__btn{
+            width: 20px;
+            height: 30px;
+            background: none;
+            border: none;
+            color: #718096;
+            font-size: 18px;
+        }
+    }
+}

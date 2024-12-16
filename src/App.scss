@@ -1,0 +1,21 @@
+.app__main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/images/bg.png");
+    background-size: cover;
+}
+
+.active {
+    background: #1A1F37;
+}
+
+body {
+    position: fixed;
+    overflow: hidden;
+}
+
+
+.sedibar_big::-webkit-scrollbar {
+    width: 0;
+}
+
