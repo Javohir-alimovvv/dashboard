@@ -5,8 +5,11 @@ import { FaCreditCard, FaUserLarge } from "react-icons/fa6";
 import { IoIosRocket, IoMdHelpCircle } from "react-icons/io";
 import logo from "../../assets/images/Logo.png"
 import { NavLink, Link } from "react-router-dom"
+import { useStore } from '../../zustend';
 
 const Sedibar = () => {
+  const onLogout = useStore(state => state.logout)
+
   return (
     <>
 
@@ -15,10 +18,10 @@ const Sedibar = () => {
           <Link>
             <img className='logo' src={logo} alt="" />
           </Link>
-          <hr className='sedibar__content__border'/>
+          <hr className='sedibar__content__border' />
           <ul className='sedibar__content__group'>
             <li>
-              <NavLink to={"/"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/home"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <IoHome />
                 </div>
@@ -26,7 +29,7 @@ const Sedibar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/billing"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <IoStatsChartSharp />
                 </div>
@@ -34,7 +37,7 @@ const Sedibar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/billing"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <FaCreditCard />
                 </div>
@@ -42,7 +45,7 @@ const Sedibar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/billing"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <IoBuild />
                 </div>
@@ -51,7 +54,7 @@ const Sedibar = () => {
             </li>
             <h3 className='sedibar__content__group__cheklov'>ACCOUNT PAGES</h3>
             <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/billing"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <FaUserLarge />
                 </div>
@@ -59,15 +62,15 @@ const Sedibar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+              <NavLink to={"/layout/billing"} className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <IoDocument />
                 </div>
                 <span>Sign In</span>
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/billing"} className='sedibar__content__group__items'>
+            <li onClick={onLogout}>
+              <NavLink className='sedibar__content__group__items'>
                 <div className='sedibar__icons'>
                   <IoIosRocket />
                 </div>

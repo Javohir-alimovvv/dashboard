@@ -14,12 +14,15 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.2.0",
     "@mui/x-charts": "^7.23.2",
+    "axios": "^1.7.9",
     "number-brm": "^1.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.0.2",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
